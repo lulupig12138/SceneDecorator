@@ -17,10 +17,10 @@ SceneDecorator: Towards Scene-Oriented Story Generation with Scene Planning and 
         <a href='' target="_blank"> 
         <img src='' alt='Hugging Face'></a> &emsp;  &emsp;
     </span>
-</p>
+</p> -->
 
 
-<!-- </div> --> -->
+</div>
 
 
 ## 🎬 Overview
