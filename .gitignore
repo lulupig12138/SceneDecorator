@@ -2,4 +2,5 @@ lora_ckpts
 sdxl_ckpts
 test_data
 generated_stories
+tmps
 **/__pycache__/

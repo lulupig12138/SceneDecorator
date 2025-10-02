@@ -107,12 +107,13 @@ def main(
     # scene_images = [Image.open(scene_image_path1).resize((1024, 1024)), Image.open(scene_image_path2).resize((1024, 1024)),
     #                 Image.open(scene_image_path3).resize((1024, 1024)), Image.open(scene_image_path4).resize((1024, 1024))]
 
-    prompts = ['sunrise, misty green hills; young botanist collecting a rare dawn-bloom; golden light; photorealistic.'] \
-                + ['clear noon, rolling hills; female cartographer on a ridge unfolding a map; wide shot; photorealistic.'] \
-                + ['sunset meadow; a traveler resting; soft glow; photorealistic']
-    
+    prompts = ['sunrise, misty green hills; a lone fox standing alert in golden light; photorealistic.',] \
+                + ['clear noon, rolling hills; a female cartographer on a ridge unfolding a map; wide shot; photorealistic.'] \
+                + ['sunset meadow; a majestic deer resting in the soft glow; photorealistic.']
+
+
     negative_prompts = len(prompts) * ["text, watermark, lowres, low quality, worst quality, deformed, glitch, low contrast, noisy, saturation, blurry"]
-    subjects = ["botanist", "cartographer", "traveler"]
+    subjects = ["fox", "cartographer", "deer"]
     # for scene image
     scene_image_path1 = "examples/cropped_image_1.png"
     scene_image_path2 = "examples/cropped_image_2.png"
@@ -197,7 +198,7 @@ if __name__ == '__main__':
     parser.add_argument("--controlnet_conditioning_scale", type=float, default=0.8)
     parser.add_argument("--num_inference_steps", type=int, default=50)
     parser.add_argument("--device", type=str, default='cuda')
-    parser.add_argument("--seed", type=int, default=33) # 42
+    parser.add_argument("--seed", type=int, default=1234) # 42
     #
     parser.add_argument("--use_mask_guided_scene_injection", action='store_true',
                         help='whether to use the mask guided scene injection.')
