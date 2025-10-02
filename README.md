@@ -1,6 +1,6 @@
 <div align="center">
 <h1>
-SceneDecorator: Towards Scene-Oriented Story Generation with Scene Planning and Scene Consistency [Official Code of PyTorch]
+SceneDecorator: Towards Scene-Oriented Story Generation with Scene Planning and Scene Consistency
 </h1>
 
 
