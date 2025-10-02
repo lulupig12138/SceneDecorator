@@ -6,19 +6,21 @@ SceneDecorator: Towards Scene-Oriented Story Generation with Scene Planning and 
 
 <!-- <p align="center">
     <span>
-        <a href="https://arxiv.org/pdf/2410.20084" target="_blank"> 
+        <a href="" target="_blank"> 
         <img src='' alt='Paper PDF'></a> &emsp;  &emsp; 
     </span>
     <span> 
-        <a href='https://quanjiansong.github.io/projects/UniVST' target="_blank">
+        <a href='' target="_blank">
         <img src='' alt='Project Page'></a>  &emsp;  &emsp;
     </span>
     <span> 
-        <a href='https://huggingface.co/papers/2410.20084' target="_blank"> 
-        <img src='https://img.shields.io/badge/Hugging_Face-UniVST-yellow' alt='Hugging Face'></a> &emsp;  &emsp;
+        <a href='' target="_blank"> 
+        <img src='' alt='Hugging Face'></a> &emsp;  &emsp;
     </span>
 </p>
-</div> -->
+
+
+<!-- </div> --> -->
 
 
 ## 🎬 Overview
@@ -34,5 +36,17 @@ conda create -n SceneDecorator python=3.10
 conda activate SceneDecorator
 pip install -r requirements.txt
 # Or installation with environment.yaml
-conda env create -f environment.yaml
+conda env create -f environment.yml
+```
+
+## 🚀 Start
+```
+bash start.sh
+```
+
+
+## 🎓 Bibtex
+🤗 If you find this code helpful for your research, please cite:
+```
+XXX
 ```
