@@ -8,7 +8,7 @@ CUDA_VISIBLE_DEVICES=3 python generate_story.py  \
                                                 --use_mask_guided_scene_injection \
                                                 --lora_path "lora_ckpts/SDXL_illustrious_mochimochi_artstyle_.safetensors"
                                                 # --photomaker_path 'lora_ckpts/photomaker-v1.bin' \
-                                                # --controlnet_path "/data/lxy/sqj/base_models/controlnet-canny-sdxl-1.0" \
+                                                # --controlnet_path "xinsir/controlnet-canny-sdxl-1.0" \
                                                 # --lora_path "lora_ckpts/SDXL_illustrious_mochimochi_artstyle_.safetensors" \
                                                 # --use_extrapolable_noise_blending \
                                                 

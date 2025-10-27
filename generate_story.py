@@ -196,9 +196,9 @@ def main(
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--base_model_path", type=str, default="/data/lxy/sqj/base_models/stable-diffusion-xl-base-1.0")
-    parser.add_argument("--scene_encoder_path", type=str, default="/data/lxy/sqj/code/SceneDecorator/sdxl_ckpts/image_encoder")
-    parser.add_argument("--scene_adapter_path", type=str, default="/data/lxy/sqj/code/SceneDecorator/sdxl_ckpts/ip-adapter_sdxl.bin")
+    parser.add_argument("--base_model_path", type=str, default="stabilityai/stable-diffusion-xl-base-1.0")
+    parser.add_argument("--scene_encoder_path", type=str, default="sdxl_ckpts/image_encoder")
+    parser.add_argument("--scene_adapter_path", type=str, default="sdxl_ckpts/ip-adapter_sdxl.bin")
     parser.add_argument("--controlnet_path", type=str, default=None)
     parser.add_argument("--photomaker_path", type=str, default=None)
     parser.add_argument("--lora_path", type=str, default=None)
