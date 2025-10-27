@@ -92,33 +92,38 @@ def main(
     # scene_image_path = "test_data/local_scenes/00090/scene02.png"
     # scene_images = [Image.open(scene_image_path).resize((1024, 1024))] * len(prompts)
 
-    # prompts = ['A young shepherd walking across the blooming spring grassland, surrounded by wildflowers, carrying a wooden staff. fantasy, cinematic lighting, highly detailed, vibrant colors.'] \
-    #             + ['A traveler resting under a tree in the summer grassland, drinking from a leather flask, bright sunlight above. fantasy, cinematic lighting, highly detailed, vibrant colors.'] \
-    #             + ['An old wanderer playing a flute on the golden autumn grassland, orange leaves falling gently around him. fantasy, cinematic lighting, highly detailed, warm tones.'] \
-    #             + ['A lone knight riding a horse across the snowy grassland, his cloak fluttering in the cold wind. fantasy, cinematic lighting, highly detailed, cold atmosphere.']
+
+
+
+    prompts = ['A woman in a straw hat stands in a meadow of wildflowers, looking at the distant hills glowing under the summer sun.'] \
+                + ['A child in an orange sweater stands in an open autumn meadow, surrounded by golden grass.'] \
+                + ['A cat runs across untouched snow under a clear blue sky, leaving playful trails behind, bright winter sunlight, cinematic, highly detailed.']
     
-    # negative_prompts = len(prompts) * ["text, watermark, lowres, low quality, worst quality, deformed, glitch, low contrast, noisy, saturation, blurry"]
-    # subjects = ["shepherd", "traveler", "wanderer", "knight"]
-    # # for scene image
-    # scene_image_path1 = "examples/grassland_spring.png"
-    # scene_image_path2 = "examples/grassland_summer.png"
-    # scene_image_path3 = "examples/grassland_autumn.png"
-    # scene_image_path4 = "examples/grassland_winter.png"
-    # scene_images = [Image.open(scene_image_path1).resize((1024, 1024)), Image.open(scene_image_path2).resize((1024, 1024)),
-    #                 Image.open(scene_image_path3).resize((1024, 1024)), Image.open(scene_image_path4).resize((1024, 1024))]
-
-    prompts = ['sunrise, misty green hills; a lone fox standing alert in golden light; photorealistic.',] \
-                + ['clear noon, rolling hills; a female cartographer on a ridge unfolding a map; wide shot; photorealistic.'] \
-                + ['sunset meadow; a majestic deer resting in the soft glow; photorealistic.']
-
-
     negative_prompts = len(prompts) * ["text, watermark, lowres, low quality, worst quality, deformed, glitch, low contrast, noisy, saturation, blurry"]
-    subjects = ["fox", "cartographer", "deer"]
+    subjects = ["girl", "woman", "child", "cat"]
     # for scene image
-    scene_image_path1 = "examples/cropped_image_1.png"
-    scene_image_path2 = "examples/cropped_image_2.png"
-    scene_image_path3 = "examples/cropped_image_3.png"
-    scene_images = [Image.open(scene_image_path1).resize((1024, 1024)), Image.open(scene_image_path2).resize((1024, 1024)), Image.open(scene_image_path3).resize((1024, 1024))]
+    scene_image_path2 = "examples/involved_scenes/case2/summer.png"
+    scene_image_path3 = "examples/involved_scenes/case2/autumn.png"
+    scene_image_path4 = "examples/involved_scenes/case2/winter.png"
+    scene_images = [Image.open(scene_image_path2).resize((1024, 1024)),
+                    Image.open(scene_image_path3).resize((1024, 1024)),
+                    Image.open(scene_image_path4).resize((1024, 1024))]
+
+
+
+
+    # prompts = ['sunrise, misty green hills; a lone fox standing alert in golden light; photorealistic.',] \
+    #             + ['sunrise, misty green hills; young botanist collecting a rare dawn-bloom; golden light; photorealistic'] \
+    #             + ['sunset meadow; a majestic deer resting in the soft glow; photorealistic.']
+
+
+    # negative_prompts = len(prompts) * ["text, watermark, lowres, low quality, worst quality, deformed, glitch, low contrast, noisy, saturation, blurry"]
+    # subjects = ["fox", "botanist", "deer"]
+    # # for scene image
+    # scene_image_path1 = "examples/cropped_image_1.png"
+    # scene_image_path2 = "examples/cropped_image_2.png"
+    # scene_image_path3 = "examples/cropped_image_3.png"
+    # scene_images = [Image.open(scene_image_path1).resize((1024, 1024)), Image.open(scene_image_path2).resize((1024, 1024)), Image.open(scene_image_path3).resize((1024, 1024))]
 
     
     
@@ -149,6 +154,12 @@ def main(
     # register the scene sharing attention
     register_scene_sharing_attention(pipe, prompts, subjects, use_scene_sharing_attention)
 
+
+
+    # ************************************************************************************************************************
+
+
+
     # generate story images
     images = pipe.generate_story(
         scene_image=scene_images,
@@ -170,7 +181,6 @@ def main(
     os.makedirs(output_path, exist_ok=True)
     print(f"save path at: {output_path}")
  
-
 
     # images.insert(0, scene_images[0])
     # prompts.insert(0, "Scene Image")
@@ -198,7 +208,7 @@ if __name__ == '__main__':
     parser.add_argument("--controlnet_conditioning_scale", type=float, default=0.8)
     parser.add_argument("--num_inference_steps", type=int, default=50)
     parser.add_argument("--device", type=str, default='cuda')
-    parser.add_argument("--seed", type=int, default=1234) # 42
+    parser.add_argument("--seed", type=int, default=777277) # 42
     #
     parser.add_argument("--use_mask_guided_scene_injection", action='store_true',
                         help='whether to use the mask guided scene injection.')

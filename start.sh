@@ -3,7 +3,7 @@
 CUDA_VISIBLE_DEVICES=3 python generate_story.py  \
                                                 --t_1 0 \
                                                 --t_2 25 \
-                                                --output_path /tmps \
+                                                --output_path tmps \
                                                 --use_scene_sharing_attention \
                                                 --use_mask_guided_scene_injection \
                                                 --lora_path "lora_ckpts/SDXL_illustrious_mochimochi_artstyle_.safetensors"
