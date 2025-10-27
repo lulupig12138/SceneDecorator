@@ -29,20 +29,20 @@ SceneDecorator: Towards Scene-Oriented Story Generation with Scene Planning and 
 
 <sub></sub>
 
-<!-- <p align="center">
+<p align="center">
     <span>
         <a href="" target="_blank"> 
         <img src='' alt='Paper PDF'></a> &emsp;  &emsp; 
     </span>
     <span> 
-        <a href='' target="_blank">
-        <img src='' alt='Project Page'></a>  &emsp;  &emsp;
+        <a href='https://lulupig12138.github.io/SceneDecorator' target="_blank">
+        <img src='https://img.shields.io/badge/Project_Page-SceneDecorator-green' alt='Project Page'></a>  &emsp;  &emsp;
     </span>
     <span> 
         <a href='' target="_blank"> 
         <img src='' alt='Hugging Face'></a> &emsp;  &emsp;
     </span>
-</p> -->
+</p>
 
 
 </div>
