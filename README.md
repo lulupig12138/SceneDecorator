@@ -40,7 +40,7 @@ SceneDecorator: Towards Scene-Oriented Story Generation with Scene Planning and 
     </span>
     <span> 
         <a href='' target="_blank"> 
-        <img src='' alt='Hugging Face'></a> &emsp;  &emsp;
+        <img src='https://img.shields.io/badge/Hugging_Face-SceneDecorator-yellow' alt='Hugging Face'></a> &emsp;  &emsp;
     </span>
 </p>
 
