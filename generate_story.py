@@ -78,9 +78,12 @@ def main(
     )
 
 
+
     # ****************************************Towards Scene-Oriented Story Generation***************************************
 
-    # for story prompts
+
+
+    # for story sub-prompts
     # prompts = ['A scholar img leans against an desk, smiling softly.'] \
     #             + ['A scholar img stands near an table, smiling softly.'] \
     #             + ['The scholar img discovers a hidden section, where time seems to stand still.'] \
@@ -94,48 +97,32 @@ def main(
 
 
 
-
+    # for story sub-prompts
     prompts = ['A woman in a straw hat stands in a meadow of wildflowers, looking at the distant hills glowing under the summer sun.'] \
                 + ['A child in an orange sweater stands in an open autumn meadow, surrounded by golden grass.'] \
                 + ['A cat runs across untouched snow under a clear blue sky, leaving playful trails behind, bright winter sunlight, cinematic, highly detailed.']
-    
     negative_prompts = len(prompts) * ["text, watermark, lowres, low quality, worst quality, deformed, glitch, low contrast, noisy, saturation, blurry"]
-    subjects = ["girl", "woman", "child", "cat"]
+    subjects = ["woman", "child", "cat"]
     # for scene image
-    scene_image_path2 = "examples/involved_scenes/case2/summer.png"
-    scene_image_path3 = "examples/involved_scenes/case2/autumn.png"
-    scene_image_path4 = "examples/involved_scenes/case2/winter.png"
+    scene_image_path2 = "examples/involving_scenes/case2/summer.png"
+    scene_image_path3 = "examples/involving_scenes/case2/autumn.png"
+    scene_image_path4 = "examples/involving_scenes/case2/winter.png"
     scene_images = [Image.open(scene_image_path2).resize((1024, 1024)),
                     Image.open(scene_image_path3).resize((1024, 1024)),
                     Image.open(scene_image_path4).resize((1024, 1024))]
-
-
-
-
-    # prompts = ['sunrise, misty green hills; a lone fox standing alert in golden light; photorealistic.',] \
-    #             + ['sunrise, misty green hills; young botanist collecting a rare dawn-bloom; golden light; photorealistic'] \
-    #             + ['sunset meadow; a majestic deer resting in the soft glow; photorealistic.']
-
-
-    # negative_prompts = len(prompts) * ["text, watermark, lowres, low quality, worst quality, deformed, glitch, low contrast, noisy, saturation, blurry"]
-    # subjects = ["fox", "botanist", "deer"]
-    # # for scene image
-    # scene_image_path1 = "examples/cropped_image_1.png"
-    # scene_image_path2 = "examples/cropped_image_2.png"
-    # scene_image_path3 = "examples/cropped_image_3.png"
-    # scene_images = [Image.open(scene_image_path1).resize((1024, 1024)), Image.open(scene_image_path2).resize((1024, 1024)), Image.open(scene_image_path3).resize((1024, 1024))]
 
     
     
     # ---------------------------------------additional for contrlnet---------------------------------------
     if controlnet_path:
-        control_image = cv2.imread("examples/yann-lecun.jpg")
+        control_image = cv2.imread("examples/yann-lecun.png")
         canny_map = cv2.Canny(control_image, 50, 200)
         canny_map = cv2.resize(canny_map, (1024, 1024))
         canny_map = Image.fromarray(cv2.cvtColor(canny_map, cv2.COLOR_BGR2RGB))
         canny_maps = [canny_map] * len(prompts)
     else:
         canny_maps = None
+
 
 
     # ---------------------------------------additional for photomaker---------------------------------------
@@ -177,14 +164,18 @@ def main(
         start_merge_step=start_merge_step,
     ).images
 
+
+
     # save results
     os.makedirs(output_path, exist_ok=True)
     print(f"save path at: {output_path}")
+
  
 
     # images.insert(0, scene_images[0])
     # prompts.insert(0, "Scene Image")
     # show_results(images, prompts, font_size=20, save_path=os.path.join(output_path, 'generated_stories.png'))
+
 
 
     for index, image in enumerate(images):
