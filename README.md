@@ -22,17 +22,19 @@ SceneDecorator: Towards Scene-Oriented Story Generation with Scene Planning and 
     <sup>3</sup>National University of Singapore,  &ensp;
     <sup>4</sup>South China University of Technology
     <br>
-    <sup>*</sup>Equal contribution.   &ensp;
-    <sup>†</sup>Project lead.   &ensp;
-    <sup>‡</sup>Corresponding authors.
+    <sub>
+        <sup>*</sup>Equal contribution.   &ensp;
+        <sup>†</sup>Project lead.   &ensp;
+        <sup>‡</sup>Corresponding authors.
+    </sub>
 </div>
 
 <sub></sub>
 
 <p align="center">
     <span>
-        <a href="" target="_blank"> 
-        <img src='' alt='Paper PDF'></a> &emsp;  &emsp; 
+        <a href="https://arxiv.org/pdf/2510.22994" target="_blank"> 
+        <img src='https://img.shields.io/badge/arXiv%20202510.22994-SceneDecorator-red' alt='Paper PDF'></a> &emsp;  &emsp; 
     </span>
     <span> 
         <a href='https://lulupig12138.github.io/SceneDecorator' target="_blank">
