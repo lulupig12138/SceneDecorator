@@ -17,9 +17,9 @@ SceneDecorator: Towards Scene-Oriented Story Generation with Scene Planning and 
 
 <div>
     <sup>1</sup>Monash University,  &ensp;
-    <sup>2</sup>The Chinese University of Hong Kong,
+    <sup>2</sup>The Chinese University of Hong Kong
     <br>
-    <sup>3</sup>National University of Singapore,  &ensp;
+    <sup>3</sup>National University of Singapore  &ensp;
     <sup>4</sup>South China University of Technology
     <br>
     <sub>
