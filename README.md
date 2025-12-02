@@ -34,7 +34,7 @@ SceneDecorator: Towards Scene-Oriented Story Generation with Scene Planning and 
 <p align="center">
     <span>
         <a href="https://arxiv.org/pdf/2510.22994" target="_blank"> 
-        <img src='https://img.shields.io/badge/arXiv%20202510.22994-SceneDecorator-red' alt='Paper PDF'></a> &emsp;  &emsp; 
+        <img src='https://img.shields.io/badge/arXiv%202510.22994-SceneDecorator-red' alt='Paper PDF'></a> &emsp;  &emsp; 
     </span>
     <span> 
         <a href='https://lulupig12138.github.io/SceneDecorator' target="_blank">
