@@ -81,10 +81,10 @@ bash start.sh
 ## 🎓 Bibtex
 🤗 If you find this code helpful for your research, please cite:
 ```
-@article{song2025scenedecorator,
-  title={SceneDecorator: Towards Scene-Oriented Story Generation with Scene Planning and Scene Consistency},
+@article{song2026scenedecorator,
+  title={Scenedecorator: Towards scene-oriented story generation with scene planning and scene consistency},
   author={Song, Quanjian and Zhou, Donghao and Lin, Jingyu and Shen, Fei and Wang, Jiaze and Hu, Xiaowei and Chen, Cunjian and Heng, Pheng-Ann},
-  journal={arXiv preprint arXiv:2510.22994},
-  year={2025}
+  journal={Advances in Neural Information Processing Systems},
+  year={2026}
 }
 ```
