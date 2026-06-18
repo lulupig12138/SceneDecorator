@@ -3,34 +3,6 @@
 SceneDecorator: Towards Scene-Oriented Story Generation with Scene Planning and Scene Consistency
 </h1>
 
-<div>
-    <a href='' target='_blank' style='text-decoration:none'>Quanjian Song<sup>1,*</sup></a>, &ensp;
-    <a href='' target='_blank' style='text-decoration:none'>Donghao Zhou<sup>2,*†</sup></a>, &ensp;
-    <a href='' target='_blank' style='text-decoration:none'>Jingyu Lin<sup>1,*†</sup></a>, &ensp;
-    <a href='' target='_blank' style='text-decoration:none'>Fei Shen<sup>3</sup></a>, &ensp;
-    <br>
-    <a href='' target='_blank' style='text-decoration:none'>Jiaze Wang<sup>2</sup></a>, &ensp;
-    <a href='' target='_blank' style='text-decoration:none'>Xiaowei Hu<sup>4,‡</sup></a>, &ensp;
-    <a href='' target='_blank' style='text-decoration:none'>Cunjian Chen<sup>1,‡</sup></a>, &ensp;
-    <a href='' target='_blank' style='text-decoration:none'>Pheng-Ann Heng<sup>2</sup></a>
-</div>
-
-<div>
-    <sup>1</sup>Monash University  &ensp;
-    <sup>2</sup>The Chinese University of Hong Kong
-    <br>
-    <sup>3</sup>National University of Singapore  &ensp;
-    <sup>4</sup>South China University of Technology
-    <br>
-    <sub>
-        <sup>*</sup>Equal contribution.   &ensp;
-        <sup>†</sup>Project lead.   &ensp;
-        <sup>‡</sup>Corresponding authors.
-    </sub>
-</div>
-
-<sub></sub>
-
 <p align="center">
     <span>
         <a href="https://arxiv.org/pdf/2510.22994" target="_blank"> 
